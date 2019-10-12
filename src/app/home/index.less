@@ -1,0 +1,92 @@
+
+@import "~antd/dist/antd.less";
+
+@font-size-base: 14px;
+@layout-header-background: #001529;
+
+html { overflow-y: hidden; }
+
+//针对IE10中flex:auto;不起作用
+.ant-layout {
+	flex: 1;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    .logoContainer {
+    	text-align: center;
+    	height: 100px;
+    	line-height: 100px;
+		
+		a {
+			display: inline-block;
+
+			.logo {
+				width: 50px;
+				height: 50px;
+			}
+		}
+
+		.title {
+			color: #1890ff;
+			font-size: 17px;
+			font-weight: 600;
+			display: inline-block;
+    		padding: 0 10px;
+		}
+    }
+
+    .header {
+		background: #fff;
+		padding: 0 10px;
+		height: 50px;
+		line-height: 50px;
+		position: relative;
+
+		.trigger {
+			font-size: 17px;
+		}
+
+		.userContainer {
+			display: inline-block;
+		    position: absolute;
+		    right: 13px;
+		    font-size: 16px;
+		    z-index: 100;
+
+		    .userInfo {
+		    	font-size: 16px;
+			    text-align: right;
+			    padding: 2px;
+			    cursor: pointer;
+
+		    	.usernameIcon {
+					margin-right: 10px;
+			    }
+		    }
+			
+			.userOption {
+				width: 150px;
+				font-size: 15px;
+			    color: #fff;
+			    border-radius: 3px;
+				padding-left: 15px;
+
+				.logout {
+					width: 100%;
+					background: #0000ff;
+					text-align: left; 
+				    outline: none;
+				    border: none;
+			    }
+			}
+
+		    
+		}
+	}
+}
